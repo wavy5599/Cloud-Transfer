@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure File Upload</title>
+    <link rel="stylesheet" href="/cloud-back-up-web/styles.css">
+    <link rel="icon" href="assets/download.png">
+    <link rel="favicon" href="assets/download.png">
+</head>
+<body>
+    <h1>Welcome to Secure Cloud Upload</h1>
+    <div id="login" style="display: none;">
+    <h2>Login</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="authenticate()">Login</button>
+    <p id="login-msg" class="error"></p>
+</div>
+
+<div id="upload" style="display: none;">
+    <h2>Upload a File</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+    <p id="upload-msg"></p>
+</div>
+
+   
+    <script src="/cloud-back-up-web/index.js"></script>
